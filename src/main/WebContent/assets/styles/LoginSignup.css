@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: black;
+	font-family: "Windows Regular", monospace;
+}
+
+a {
+	cursor: pointer;
+	color: navy;
+}
+
+body {
+	background-color: teal;
+	background-repeat: repeat-y;
+	background-position: 82%;
+	min-height: 100vh;
+	font-size: 14px;
+	font-family: source code pro, monospace;
+}
+
+section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	background-color: #C0C0C0;
+	border: 2px solid #808080;
+	width: 380px;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 2px 2px 5px #808080;
+	border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px #fff, 1px 1px #000;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-family: source code pro extralight, monospace;
+}
+
+.wrapper form {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	max-width: 300px;
+	margin: auto;
+}
+
+.wrapper form input[type="email"],
+.wrapper form input[type="password"],
+.wrapper form input[type="text"] {
+	border-radius: 3px;
+	border: 2px solid #808080;
+	height: 20px;
+	color: black;
+	padding: 0 5px;
+	margin: 8px 0;
+}
+
+.wrapper form input[type="submit"] {
+	height: 50px;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: navy;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: inset 1px 1px #fff, 1px 1px #000;
+    border-bottom-width: 2px;
+}
+
+.wrapper form input[type="submit"]:hover {
+	background: #2e47ac;
+	color: white;
+}
+
+.no-account {
+	display: block;
+	text-align: center;
+	margin: 15px auto auto auto;
+	padding-top: 10px;
+	max-width: 450px;
+	border-top: 1px solid #808080;
+	font-size: 14px;
+}
+
+.no-account a {
+	text-decoration: underline;
+	display: block;
+	color: navy;
+}
+
+.errors-wrapper {
+	margin: 10px auto;
+	background-color: #FFC0CB;
+	border: 2px solid red;
+	padding: 10px;
+	border-radius: 10px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.errors-wrapper span {
+	color: red;
+	font-size: 14px;
+}
+
+.success-wrapper{
+	margin: 10px auto;
+	background-color: #90EE90;
+	border: 2px solid green;
+	padding: 10px;
+	border-radius: 10px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.success-wrapper span {
+	color: green;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+	.wrapper form input {
+		width: 100%;
+	}
+	form {
+		width: 100%;
+	}
+}
