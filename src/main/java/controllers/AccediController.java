@@ -62,7 +62,7 @@ public class AccediController extends HttpServlet {
 				loginDispatcher.forward(request, response);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
