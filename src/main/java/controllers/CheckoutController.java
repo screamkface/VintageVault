@@ -56,7 +56,7 @@ public class CheckoutController extends HttpServlet {
 			orderDao.effettuaOrdine(carrello.getProducts(), id_utente, indirizzo);
 			request.getSession().setAttribute("carrello", null);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context", e);
 		}
 
 		response.sendRedirect("carrello");
