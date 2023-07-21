@@ -1,0 +1,298 @@
+
+header {
+  box-sizing: border-box;
+  z-index: 10;
+  padding: 0 20px 4px 15px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  justify-content: space-between;
+  background: #C0C0C0;
+  font-family: "Windows Regular";
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  border-bottom: 2px solid #000000;
+}
+
+.logo-wrapper {
+	
+	flex: 1;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-wrapper:hover {
+	cursor: pointer;
+}
+
+.logo-wrapper:hover>p {
+	color: #010081 !important;
+}
+
+.logo-wrapper img {
+	
+	width: 40px;
+}
+
+.logo-wrapper p {
+	text-align: center;
+	
+	color: white;
+	
+	
+	font-family: "Windows Regular", sans-serif;
+	font-size: 32px;
+}
+
+.navbar {
+	
+	flex: 0;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 12px;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+
+.navbar ul li {
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navbar a:hover {
+	color: #010081;
+}
+
+div.icons-wrapper {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+	margin-top: 8px;
+}
+
+div.icons-wrapper a {
+	display: flex;
+}
+
+div.icons-wrapper svg {
+	width: 35px;
+	cursor: pointer;
+}
+
+div.icons-wrapper svg:hover>path {
+	fill: #010081;
+}
+
+div.icons-wrapper a:nth-child(2) {
+	margin-top: 4px;
+	position: relative;
+}
+
+.account-popup::before {
+	content: "";
+	position: absolute;
+	top: -7px;
+	left: 59.5%;
+	/* transform: translateX(-50%); */
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+}
+
+.account-popup {
+	position: absolute;
+	left: -300%;
+	top: 100%;
+	background-color: #7e7e7e;;
+	color: white;
+	padding: 10px;
+	width: 190px;
+	display: none;
+	
+}
+
+.account-popup-name {
+	color: black;
+	display: block;
+	text-align: center;
+	margin: 3px;
+	font-size: 15px;
+}
+
+.account-popup-logout a {
+	display: block !important;
+	text-align: center;
+	color: red;
+	margin: 3px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.account-popup-logout a:hover {
+	scale: 1.05;
+}
+
+.account-popup ul {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.account-popup ul a {
+	display: block !important;
+}
+
+.account-popup ul li {
+	color: black;
+	display: block;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 4px;
+}
+
+.account-popup ul li:hover {
+	color: #010081;
+	scale: 1.05;
+}
+
+.cart-count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	top: -3px;
+	right: -5px;
+	background-color: #ff0081;
+	cursor: pointer;
+	user-select: none;
+}
+
+.hamburger-menu-icon {
+	display: none;
+	cursor: pointer;
+}
+
+.hamburger-menu {
+	z-index: 10;
+	position: absolute;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #008080;
+}
+
+.hamburger-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 5px;
+	padding: 0 20px 0 0;
+}
+
+.hamburger-header svg {
+	width: 35px;
+}
+
+.hamburger-header .hamburger-menu-icon svg {
+	scale: 1.3;
+}
+
+.hamburger-header a {
+	cursor: pointer;
+}
+
+.hamburger-header a:nth-child(2) {
+	margin-top: 4px;
+	position: relative;
+}
+/* if .ham-active, body overflow hidden */
+.ham-active {
+	display: block;
+}
+
+body:has(.ham-active) {
+	overflow: hidden;
+}
+
+.hamburger-middle-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, calc(-50% - 60px));
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.hamburger-middle-content-item {
+	padding-bottom: 8px;
+	border-bottom: 1px solid white;
+	width: 100%;
+	text-align: center;
+}
+
+.hamburger-middle-content-item a {
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.error {
+	margin: 10px auto;
+	background-color: rgb(255, 206, 206);
+	border: 1px solid red;
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+	flex-direction: column;
+	color: red;
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo-wrapper p {
+		display: none;
+	}
+	.navbar {
+		display: none;
+	}
+	.hamburger-menu-icon {
+		display: block;
+	}
+}

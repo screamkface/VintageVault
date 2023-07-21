@@ -1,0 +1,70 @@
+/* <footer> */
+
+* {
+    font-family: "Windows Regular", monospace;
+}
+
+
+footer {
+	border-top: 2px solid black;
+	margin-top: auto;
+	
+	display: flex;
+	
+	
+	justify-content: center;
+	
+
+	gap: 20px;
+	padding: 50px 100px;
+	background-color: #c3c3c3;
+}
+
+.footer-row {
+	flex: 1;
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: center;
+}
+
+
+.footer-row-title {
+	font-size: 24px;
+	font-family: "Windows Regular";
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+
+}
+
+.footer-row-description {
+	
+	font-size: 15px;
+
+	max-width: 70%;
+	
+	margin: auto;
+	text-align: center;
+	color: black;
+}
+
+.footer-row-description a {
+	text-decoration: underline;
+	cursor: pointer;
+	color: black;
+}
+
+@media screen and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		padding: 50px 50px;
+		gap: 60px;
+	}
+	.footer-row-description {
+		max-width: max-content;
+	}
+}
+/* </footer> */

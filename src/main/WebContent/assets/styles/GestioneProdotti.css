@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  scroll-behavior: smooth;
+  font-family: "Ubuntu", sans-serif;
+  
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+a {
+	
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+	
+  background-color: #008080;
+  background-image: url("../images/sfondo-darker.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 82%;
+  min-height: 100svh;
+}
+
+section{
+	
+	padding-top: 80px;
+}
+
+
+.prezzo{
+
+	color: black;
+}
+
+
+.stato{
+
+	border-radius: 10px;
+	
+	padding: 5px;
+	
+	color: black;
+}
+
+
+.bg-orange{
+
+	background: orange;
+}
+
+.bg-green{
+
+	background: green;
+}
+.bg-red{
+	background: red;
+}
+
+#form-add-product {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+ border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+  background-color: #C0C0C0;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+#form-add-product h3 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#form-add-product h3 span {
+  color: navy;
+}
+
+#form-add-product input,
+#form-add-product select,
+#form-add-product textarea {
+  height: 30px;
+  color: black;
+  width: 300px;
+  max-width: 300px;
+    border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+}
+
+#form-add-product select option {
+  color: black;
+}
+
+#form-add-product input[type="submit"] {
+  width: 100px;
+  margin: auto;
+  border: 0;
+  color: white;	
+  background-color: navy;
+  cursor: pointer;
+    border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+}
+
+#form-add-product textarea {
+  height: 100px;
+}
+
+#form-add-product input[type="file"] {
+  color: black;
+  width: 215px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-wrapper-col input,
+.input-wrapper-col select {
+  color: black;
+  width: 150px !important;
+}
+
+@media screen and (max-width: 768px) {
+  #form-add-product {
+    width: 95%;
+  }
+  #form-add-product input,
+  #form-add-product textarea {
+    max-width: 100%;
+  }
+}
+
+.prodotti-wrapper {
+  background-color: #C0C0C0;
+   border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+  padding: 20px;
+  width: 80%;
+  margin: 30px auto 100px auto;
+}
+
+.prodotti-wrapper h3 {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.prodotti-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-prodotto {
+  background: #C0C0C0;
+    border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+  width: 500px;
+  gap: 20px;
+  display: flex;
+  padding: 10px;
+  color: black;
+}
+.image-prodotto {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-prodotto img {
+  display: block;
+  border-right: 1px solid gray;
+  padding: 0 15px;
+  width: 100%;
+}
+.info-prodotto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 73%;
+}
+.prodotto-title {
+  color: black;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.warehouse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px 0;
+  width: 105px;
+  gap: 2px;
+  margin-left: auto;
+}
+.warehouse p {
+  font-size: 14px;
+}
+.prezzo-prodotto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.prezzo-prodotto span {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.prezzo-prodotto a {
+  background: #3acd3b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.form-edit-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.prezzo-prodotto label,
+.prezzo-prodotto input[type="number"] {
+  color: black;
+  max-width: 70px;
+  text-align: center;
+}
+
+.prezzo-prodotto input[type="submit"] {
+  background-color: #3acd3b;
+  padding: 5px;
+    border: 1px solid black;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
+  border: 0;
+  color: black;
+  cursor: pointer;
+}
+
+.form-delete-product input {
+  background-color: rgb(236, 3, 3) !important;
+}
+
+.wrapper-flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wrapper-flex-col .warehouse {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .prodotti-wrapper {
+    width: 95%;
+  }
+  .card-prodotto {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-prodotto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prezzo-prodotto {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
