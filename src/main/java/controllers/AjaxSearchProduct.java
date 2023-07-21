@@ -48,7 +48,7 @@ public class AjaxSearchProduct extends HttpServlet {
 				out.print(json.toString());
 				return;
         	} catch (SQLException e) {
-				e.printStackTrace();
+				LOGGER.log("context",e);
 			}
         }
         
