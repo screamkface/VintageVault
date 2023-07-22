@@ -114,7 +114,7 @@ public class GestioneProdottiController extends HttpServlet {
 		try {
 			productDao.doSave(pb);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 	
@@ -144,7 +144,7 @@ public class GestioneProdottiController extends HttpServlet {
 		try {
 			productDao.editProduct(Integer.parseInt(id), Double.parseDouble(prezzo), Integer.parseInt(quantita));
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 	
