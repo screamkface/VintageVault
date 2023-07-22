@@ -77,7 +77,7 @@ public class RegistratiController extends HttpServlet {
 			userDao.doSave(ub);
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
