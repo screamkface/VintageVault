@@ -29,7 +29,7 @@ public class OrdiniController extends HttpServlet {
 			request.getRequestDispatcher("/i-miei-ordini.jsp").forward(request, response);
 			return;
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 		response.sendRedirect("/");
 	}
