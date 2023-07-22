@@ -38,7 +38,7 @@ public class CartController extends HttpServlet {
 				try {
 					carrello.addProduct(productDao.getProductById(id));
 				} catch (SQLException e) {
-					e.printStackTrace();
+					LOGGER.log("context",e);
 				}
 				break;
 			}
@@ -46,7 +46,7 @@ public class CartController extends HttpServlet {
 				try {
 					carrello.deleteProduct(productDao.getProductById(id));
 				} catch (SQLException e) {
-					e.printStackTrace();
+					LOGGER.log("context",e);
 				}
 				break;
 			}
