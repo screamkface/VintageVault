@@ -33,7 +33,7 @@ public class LeMieVenditeController extends HttpServlet {
 			request.setAttribute("products", pbs);
 			request.getRequestDispatcher("le-mie-vendite.jsp").forward(request, response);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
@@ -90,7 +90,7 @@ public class LeMieVenditeController extends HttpServlet {
 		try {
 			productDao.addRequest(pb, ((UserBean)request.getSession().getAttribute("user")).getId());
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 		
 		doGet(request, response);
