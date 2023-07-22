@@ -44,7 +44,7 @@ public class OrdiniAdminController extends HttpServlet {
 			request.getRequestDispatcher("/admin/ordini.jsp").forward(request, response);
 			return;
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 		response.sendRedirect("/");
 	}
