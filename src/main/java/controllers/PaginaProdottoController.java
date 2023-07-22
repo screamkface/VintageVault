@@ -39,7 +39,7 @@ public class PaginaProdottoController extends HttpServlet {
 			
 			request.getRequestDispatcher("pagina-prodotto.jsp").forward(request, response);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
