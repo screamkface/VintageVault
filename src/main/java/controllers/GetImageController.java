@@ -46,7 +46,7 @@ public class GetImageController extends HttpServlet {
 			}
 			out.close();
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
