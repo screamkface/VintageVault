@@ -63,7 +63,7 @@ public class CheckoutController extends HttpServlet {
 			// Reindirizza l'utente alla pagina del carrello
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 
 		response.getWriter().println("<script>window.location.replace('carrello.jsp');</script>");
