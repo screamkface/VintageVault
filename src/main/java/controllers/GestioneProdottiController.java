@@ -31,7 +31,7 @@ public class GestioneProdottiController extends HttpServlet {
 			request.setAttribute("products", pbs);
 			request.getRequestDispatcher("/admin/gestione-prodotti.jsp").forward(request, response);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
