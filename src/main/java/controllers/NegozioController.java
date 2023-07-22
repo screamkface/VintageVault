@@ -58,7 +58,7 @@ public class NegozioController extends HttpServlet {
 			request.setAttribute("products", pbs);
 			request.getRequestDispatcher("/negozio.jsp").forward(request, response);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.log("context",e);
 		}
 	}
 
